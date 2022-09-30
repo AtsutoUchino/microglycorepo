@@ -1,5 +1,5 @@
 import styles from 'styles/hero.module.css'
-import Image from 'next/image'
+// import Image from 'next/image'
 
 interface Hero {
     title: string;
@@ -14,7 +14,7 @@ export default function Hero({ title, subtitle, imageOn = false }: Hero) {
           <h1 className={styles.title}>{title}</h1>
           <p className={styles.subtitle}>{subtitle}</p>
         </div>
-        {imageOn && (
+        {/* {imageOn && (
           <figure className={styles.image}>
             <Image
                 src=""
@@ -23,7 +23,7 @@ export default function Hero({ title, subtitle, imageOn = false }: Hero) {
                 sizes="(min-width: 1152px) 576px, (min-width: 768px) 50vw, 100vw"
                 />
           </figure>
-        )}
+        )} */}
       </div>
     )
   }

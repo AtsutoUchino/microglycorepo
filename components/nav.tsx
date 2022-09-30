@@ -7,22 +7,22 @@ export default function Nav(){
             <ul className={styles.list}>
                 <li>
                     <Link href="/">
-                        <a>Home</a>
+                        Home
                     </Link>
                 </li>
                 <li>
                     <Link href="/about">
-                        <a>About</a>
+                        About
                     </Link>
                 </li>
                 <li>
                     <Link href="/template">
-                        <a>Template</a>
+                        Template
                     </Link>
                 </li>
                 <li>
                     <Link href="/canvas">
-                        <a>New create</a>
+                        New create
                     </Link>
                 </li>
             </ul>
