@@ -8,6 +8,7 @@ import Shape from "components/shape";
 export default function Template() {
     return (
         <Container large>
+            {/* @ts-ignore */}
             <Meta pageTitle="Template"/>
             <Hero
                 title="Template"

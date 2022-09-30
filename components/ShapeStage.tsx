@@ -8,6 +8,10 @@ import styles from 'styles/taxonomy.module.css'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome" ;
 import { faDownload } from "@fortawesome/free-solid-svg-icons/faDownload" ;
 
+interface Window {
+    somePropertyHere: any;
+}
+
 
 interface TaxonomyResult {
     genusId: string;
@@ -80,7 +84,7 @@ const Shape = () => {
     const router = useRouter();
     console.log(router.query);
     const {id} = router.query;
-    const [posts, setPosts] = useState([])
+    const [posts, setPosts] = useState<any>([])
     useEffect(() => {
         fetch(`http://localhost:3000/json/template/shape/${id}.json`, {method: 'GET'})
         .then(res => res.json())
@@ -88,7 +92,6 @@ const Shape = () => {
             setPosts(data)
         })
     },[])
-    console.log(posts);
     const [image] = useImage(posts.image)
 
     const [genusOptions] = useState<ComboBoxItem[]>(
@@ -142,9 +145,9 @@ const Shape = () => {
     const [taxonText, setTaxonText] = useState()
     const onClickTaxon = () => {
         // console.log(document.hrefform[1].textContent);
-        
         if (document){
-            const taxonText = document.hrefform[1].textContent
+            {/* @ts-ignore */}
+            const taxonText = document.hrefform[1].textContent;
             setTaxonText(taxonText);
         }
     };
@@ -172,6 +175,7 @@ const Shape = () => {
                     defaultValue={"1"}
                     onChange={(selected) => setSelectedSpeciesId(selected)}
                 />
+                {/* @ts-ignore */}
                 <Button variant="outlined" size="large" onClick={onClickTaxon}>
                     Select
                 </Button>

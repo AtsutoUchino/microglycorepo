@@ -79,7 +79,7 @@ const Staining = () => {
     const router = useRouter();
     console.log(router.query);
     const {id} = router.query;
-    const [posts, setPosts] = useState([])
+    const [posts, setPosts] = useState<any>([])
     useEffect(() => {
         fetch(`http://localhost:3000/json/template/staining/${id}.json`, {method: 'GET'})
         .then(res => res.json())
@@ -144,6 +144,7 @@ const Staining = () => {
         // console.log(document.hrefform[1].textContent);
         
         if (document){
+            {/* @ts-ignore */}
             const taxonText = document.hrefform[1].textContent
             setTaxonText(taxonText);
         }

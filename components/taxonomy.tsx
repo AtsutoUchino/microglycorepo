@@ -114,6 +114,7 @@ const Taxonomy = () => {
     const onClickTaxon = () => {
         // console.log(document.hrefform[1].textContent);
         if (document){
+          {/* @ts-ignore */}
             location.href=document.hrefform[1].textContent;
         }
     };

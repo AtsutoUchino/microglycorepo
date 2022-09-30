@@ -15,6 +15,7 @@ const TaxonomyStage: FC = () => {
                 >
                 <Layer>
                 <Text
+                // @ts-ignore
                     text={id}
                     fontSize={50}
                     fontStyle='bold italic'

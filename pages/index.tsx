@@ -5,23 +5,13 @@ import Meta from 'components/meta'
 export default function Home () {
   return (
     <Container large>
+      {/* @ts-ignore */}
       <Meta />
       <Hero
         title="MGR"
         subtitle="Curation system for MicroGlycoDB"
         imageOn
       />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
     </Container>
   )
 }
