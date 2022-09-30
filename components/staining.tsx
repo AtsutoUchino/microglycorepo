@@ -8,12 +8,12 @@ const Staining = () => {
             <div className={styles.imagesWrapper}>
                 <Link href="/template/staining/gram-positive">
                     <div className={styles.image}>
-                        <img src="/image/template/staining/gram-positive.svg" />
+                        <img src="/image/template/staining/gram-positive.svg" alt="gram-positive image"/>
                     </div>
                 </Link>
                 <Link href="/template/staining/gram-negative">
                     <div className={styles.image}>
-                        <img src="/image/template/staining/gram-negative.svg" />
+                        <img src="/image/template/staining/gram-negative.svg" alt="gram-negative image"/>
                     </div>
                 </Link>
             </div>

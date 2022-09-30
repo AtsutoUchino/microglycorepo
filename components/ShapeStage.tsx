@@ -85,8 +85,10 @@ const Shape = () => {
     console.log(router.query);
     const {id} = router.query;
     const [posts, setPosts] = useState<any>([])
+        // const hostName = "http://localhost:3000/";
+        const hostName = "https://microglycorepo.vercel.app/";
     useEffect(() => {
-        fetch(`http://localhost:3000/json/template/shape/${id}.json`, {method: 'GET'})
+        fetch(`${hostName}json/template/shape/${id}.json`, {method: 'GET'})
         .then(res => res.json())
         .then(data => {
             setPosts(data)

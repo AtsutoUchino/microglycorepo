@@ -80,8 +80,10 @@ const Staining = () => {
     console.log(router.query);
     const {id} = router.query;
     const [posts, setPosts] = useState<any>([])
+        // const hostName = "http://localhost:3000/";
+        const hostName = "https://microglycorepo.vercel.app/";
     useEffect(() => {
-        fetch(`http://localhost:3000/json/template/staining/${id}.json`, {method: 'GET'})
+        fetch(`${hostName}json/template/staining/${id}.json`, {method: 'GET'})
         .then(res => res.json())
         .then(data => {
             setPosts(data)
@@ -200,6 +202,7 @@ const Staining = () => {
                 fontStyle='bold italic'
                 x={30}
                 y={30}
+                alt="taxonomy text"
                 />
             </Layer>
             </Stage>
