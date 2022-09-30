@@ -1,0 +1,10 @@
+.cellShape {
+    white-space:nowrap;
+    overflow:scroll;
+    width: 100%;
+    height: 140px;
+}
+
+.cellShape img {
+    padding: 10px;
+}
