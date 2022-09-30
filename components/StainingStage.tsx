@@ -86,6 +86,7 @@ const Staining = () => {
         .then(data => {
             setPosts(data)
         })
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     // console.log(posts);
 
@@ -189,6 +190,7 @@ const Staining = () => {
                 image={image}
                 x={20}
                 y={100}
+                alt="staining image"
                 />
             <Text
                 text={taxonText}

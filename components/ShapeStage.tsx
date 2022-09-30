@@ -91,6 +91,7 @@ const Shape = () => {
         .then(data => {
             setPosts(data)
         })
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     const [image] = useImage(posts.image)
 
@@ -201,6 +202,7 @@ const Shape = () => {
                 image={image}
                 x={30}
                 y={100}
+                alt="cell shape image"
                 />
             </Layer>
             </Stage>
