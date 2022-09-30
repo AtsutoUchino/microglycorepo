@@ -191,13 +191,15 @@ const Staining = () => {
                 x={20}
                 y={100}
                 alt="staining image"
+                width={500}
+                height={500}
                 />
             <Text
                 text={taxonText}
                 fontSize={50}
                 fontStyle='bold italic'
                 x={30}
-                y={10}
+                y={30}
                 />
             </Layer>
             </Stage>
