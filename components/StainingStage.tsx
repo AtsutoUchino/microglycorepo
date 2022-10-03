@@ -156,6 +156,7 @@ const Staining = () => {
     const stageRef = React.useRef(null);
     const handleExport = () => {
         const uri = stageRef.current.toDataURL();
+        console.log(uri);
         downloadURI(uri, 'stage.png');
     };
 

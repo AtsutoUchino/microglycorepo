@@ -158,7 +158,8 @@ const Shape = () => {
     const stageRef = React.useRef(null);
     const handleExport = () => {
         const uri = stageRef.current.toDataURL();
-        downloadURI(uri, 'stage.png');
+        console.log(uri);
+        // downloadURI(uri, 'stage.png');
     };
 
     return (
